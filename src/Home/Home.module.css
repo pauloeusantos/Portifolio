@@ -1,0 +1,74 @@
+:root {
+    font-family: 'Fira Code', monospace;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root {
+    font-family: 'Fira Code', monospace;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  
+    --primary: #16213E;
+    --secondary: #0F3460;
+    --terceary: #533483;
+    --red: #E94560;
+    --soft-white: #f1f1f1;
+    --white: #fefefe;
+    --black: #111;
+    --gray: #222222;
+  }
+  
+  /* css da page Home */
+  .container {
+    width: 100%;
+    min-height: 90vh;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .container img {
+    height: 500px;
+  }
+  
+  .container p {
+    font-size: 3rem; /* 48px */
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .container span {
+    color: var(--red);
+  }
+  
+  .btn {
+    width: 250px;
+    height: 50px;
+    font-size: 1.125rem;
+    font-weight: bold;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .btn-red {
+    background-color: var(--red);
+    color: var(--white);
+  }
+  
+  .btn-red:hover {
+    background-color: var(--primary);
+  }
+  
