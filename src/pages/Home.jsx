@@ -1,28 +1,20 @@
-import Footer from './components/Footer'
-import Header from './components/Header'
+import React from 'react';
+import Header from '../components/Header';
+import HeroSection from '../components/HeroSection';
+import AboutSection from '../components/AboutSection';
+import ProjectsSection from '../components/ProjectsSection';
+import ContactSection from '../components/ContactSection';
 
-function Home() {
-    return (
-       <>
-          <Header />
-          <section className='container'>
-            <div className='apresentacao'>
-              <p>
-                Olá, sou <br/>
-                <span>Sandra Alves</span> <br/>
-                Dev Full Stack
-              </p>
-              <button className='btn btn-red'>
-                Saiba mais sobre mim
-              </button>
-            </div>
-            <figure>
-              <img className='img-home' src="/developer-red.svg" alt="Imagem de Home" />
-            </figure>
-          </section>
-          <Footer />
-        </> 
-    )
+const Home = () => {
+  return (
+    <div>
+      <Header />
+      <HeroSection />
+      <AboutSection />
+      <ProjectsSection />
+      <ContactSection />
+    </div>
+  );
 }
 
-export default Home
+export default Home;
