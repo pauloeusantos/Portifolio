@@ -1,18 +1,21 @@
 import React from 'react';
 import Header from '../components/Header';
 import HeroSection from '../components/HeroSection';
-import AboutSection from '../components/AboutSection';
+
 import ProjectsSection from '../components/ProjectsSection';
-import ContactSection from '../components/ContactSection';
+
+import Skils from '../components/Skills/Skillss';
+import AboutAndContactSection from '../components/AboutAndContactSection/AboutAndContactSection';
+
 
 const Home = () => {
   return (
     <div>
       <Header />
       <HeroSection />
-      <AboutSection />
+      <Skils/>
       <ProjectsSection />
-      <ContactSection />
+      <AboutAndContactSection/>
     </div>
   );
 }
