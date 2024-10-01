@@ -1,4 +1,3 @@
-
 import { FooterIcon } from "flowbite-react";
 import { BsGithub, BsLinkedin, BsEnvelopeFill } from "react-icons/bs";
 import Foto from "../../public/fot.jpeg"; 
@@ -58,12 +57,12 @@ const HeroSection = ({ onOpen }) => {
 const BubbleText = () => {
   return (
     <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold text-indigo-200 mt-4 drop-shadow-lg">
-      {"Desenvolvedor ".split("").map((child, idx) => (
+      {"Desenvolvedor ".split("").map((char, idx) => (
         <span
           className="inline-block transition-transform duration-300 hover:scale-125"
           key={idx}
         >
-          {child}
+          {char}
         </span>
       ))}
     </h2>

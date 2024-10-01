@@ -77,6 +77,7 @@ const Home = () => {
     <>
       <Header onOpen={handleOpen} />
       <Container onOpen={handleOpen} />
+
       <About />
       <Footer />
 

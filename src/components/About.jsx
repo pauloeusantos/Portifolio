@@ -18,7 +18,7 @@ const About = () => {
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-5xl font-bold text-center mb-8">About Me</h2>
         <p className="text-lg text-center mb-10">
-         Hi there! I'm Paulo, a technology enthusiast constantly evolving and a dedicated student of the Technical Informatics course.
+          Olá! Eu sou Paulo, um entusiasta da tecnologia em constante evolução e um estudante dedicado do curso de Informática Técnica.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {skills.map(skill => (
