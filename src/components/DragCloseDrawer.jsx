@@ -43,7 +43,7 @@ const DragCloseDrawer = ({ open, setOpen, children }) => {
             transition={{
               ease: "easeInOut",
             }}
-            className="absolute bottom-0 h-[75vh] w-full overflow-hidden rounded-t-3xl bg-neutral-900" 
+            className="absolute bottom-0 h-[75vh] w-full rounded-t-3xl bg-neutral-900" 
             style={{ y }}
           >
             <div className="absolute left-0 right-0 top-0 z-10 flex justify-center p-4">
@@ -54,7 +54,7 @@ const DragCloseDrawer = ({ open, setOpen, children }) => {
                 className="h-2 w-14 cursor-grab touch-none rounded-full  active:cursor-grabbing"
               ></button>
             </div>
-            <div className="relative z-0 h-full overflow-hidden p-4 pt-12"> 
+            <div className="relative z-0 h-full hide-scrollbar p-4 pt-12 overflow-auto"> 
               {children}
             </div>
           </motion.div>

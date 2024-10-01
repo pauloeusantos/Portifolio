@@ -10,31 +10,60 @@ import { ExternalLink, Github } from 'lucide-react';
 const projects = [
   {
     id: 1,
-    title: 'Movie List',
-    description: 'Os dados dos filmes são obtidos a partir de uma API externa, proporcionando informações atualizadas sobre títulos, sinopses, classificações e outros detalhes relevantes.',
-    demoLink: 'https://santfilmes.netlify.app/',
-    codeLink: 'https://github.com/pauloeusantos/RoomApp' 
+    title: 'Lista De Contato',
+    description: 'Projeto Utilizando Swift',
+    demoLink: 'https://github.com/pauloeusantos/Lista-Contato-',
+    codeLink: 'https://github.com/pauloeusantos/Lista-Contato-' 
   },
   {
     id: 2,
+    title: 'Cadastro De Filmes',
+    description: 'Projeto Utilizando Swift',
+    demoLink: 'https://github.com/pauloeusantos/Tela-Cadastro-Filmes',
+    codeLink: 'https://github.com/pauloeusantos/Tela-Cadastro-Filmes' 
+  },
+  {
+    id: 3,
+    title: 'Clima ',
+    description: 'Projeto Consumindo API https://api.openweathermap.org',
+    demoLink: 'https://github.com/pauloeusantos/Tela-Cadastro-Filmes',
+    codeLink: 'https://github.com/pauloeusantos/Tela-Cadastro-Filmes' 
+  },
+
+  {
+    id: 4,
     title: 'Api Movies',
     description: 'React.js consumindo API',
     demoLink: 'https://api-movies-virid.vercel.app/',
     codeLink: 'https://github.com/pauloeusantos/ApiMovies' 
   },
   {
-    id: 3,
+    id: 5,
     title: 'RoomApp',
     description: 'Utilizando a biblioteca Room para gerenciamento de banco de dados local.',
     demoLink: 'https://github.com/pauloeusantos/RoomApp',
     codeLink: 'https://github.com/pauloeusantos/RoomApp'
   },
   {
-    id: 4,
+    id: 6,
     title: 'RoomApp-Inventory',
     description: 'Este aplicativo permite aos usuários adicionar itens ao inventário, especificar o preço e a quantidade em estoque, e gerenciar esses itens de forma eficiente.',
     demoLink: 'https://github.com/pauloeusantos/RoomApp-Inventory',
     codeLink: 'https://github.com/pauloeusantos/RoomApp-Inventory'
+  },
+  {
+    id: 7,
+    title: 'Movie List',
+    description: 'Os dados dos filmes são obtidos a partir de uma API externa, proporcionando informações atualizadas sobre títulos, sinopses, classificações e outros detalhes relevantes.',
+    demoLink: 'https://santfilmes.netlify.app/',
+    codeLink: 'https://github.com/pauloeusantos/MovieList' 
+  },
+  {
+    id: 8,
+    title: 'Pedra-Papel-Tesoura',
+    description: '',
+    demoLink: 'https://jokenp-pedra-papel-tesoura.vercel.app/',
+    codeLink: 'https://github.com/pauloeusantos/JOKENP---Pedra-Papel-Tesoura' 
   },
 ];
 

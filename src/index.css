@@ -4,6 +4,16 @@
 
 @import 'flowbite';
 
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Para ocultar a barra de rolagem em navegadores baseados em WebKit (Chrome, Safari) */
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* Para Internet Explorer e Edge */
+  scrollbar-width: none;  /* Para Firefox */
+}
+
 @layer base {
   :root {
 

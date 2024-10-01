@@ -1,5 +1,4 @@
 
-
 const Header = ({ onOpen }) => {
   return (
     <header className="fixed top-0 w-full z-50 py-4 shadow-lg bg-gray-800 backdrop-blur-lg bg-opacity-70 transition-all duration-300">
@@ -8,7 +7,7 @@ const Header = ({ onOpen }) => {
           <li>
             <a
               href="#hero"
-              className="text-white text-lg no-underline hover:text-blue-300 transition-colors duration-300"
+              className="text-white text-lg no-underline hover:text-blue-500 transition-colors duration-300"
             >
               Home
             </a>
@@ -16,7 +15,7 @@ const Header = ({ onOpen }) => {
           <li>
             <a
               href="#about"
-              className="text-white text-lg no-underline hover:text-blue-300 transition-colors duration-300"
+              className="text-white text-lg no-underline hover:text-blue-500 transition-colors duration-300"
             >
               About
             </a>
@@ -24,7 +23,7 @@ const Header = ({ onOpen }) => {
           <li>
             <button
               onClick={onOpen}
-              className="text-white text-lg no-underline hover:text-blue-300 transition-colors duration-300"
+              className="text-white text-lg no-underline hover:text-blue-500 transition-colors duration-300"
             >
               Projects
             </button>
