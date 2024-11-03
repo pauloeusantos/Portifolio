@@ -18,6 +18,7 @@ import {
               <FooterIcon href="mailto:paulohenriquedeoliveira2006@gmail.com" icon={BsEnvelopeFill} className="transition-colors duration-300 hover:text-blue-500" />
             </div>
           </div>
+          <p>Copyright &#169; 2024 @Bernardo Juscelino. All Rights Reserved.</p>
         </div>
       </FlowbiteFooter>
     );
