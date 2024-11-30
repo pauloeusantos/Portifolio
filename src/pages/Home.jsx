@@ -10,62 +10,69 @@ import { ExternalLink, Github } from 'lucide-react';
 const projects = [
   {
     id: 1,
+    title: 'MyPeace',
+    description: 'Projeto Academico',
+    demoLink: 'https://mypeace.vercel.app/',
+    codeLink: 'https://github.com/pauloeusantos/MyPeace'
+  },
+  {
+    id: 2,
     title: 'Chat',
     description: 'Projeto Utilizando SDK-Vercel, HuggingFace e ShadcnUi',
     demoLink: 'https://chat-paulo.vercel.app/',
     codeLink: 'https://github.com/pauloeusantos/ChatPaulo'
   },
   {
-    id: 2,
+    id: 3,
     title: 'Lista De Contato',
     description: 'Projeto Utilizando Swift',
     demoLink: 'https://github.com/pauloeusantos/Lista-Contato-',
     codeLink: 'https://github.com/pauloeusantos/Lista-Contato-' 
   },
   {
-    id: 3,
+    id: 4,
     title: 'Cadastro De Filmes',
     description: 'Projeto Utilizando Swift',
     demoLink: 'https://github.com/pauloeusantos/Tela-Cadastro-Filmes',
     codeLink: 'https://github.com/pauloeusantos/Tela-Cadastro-Filmes' 
   },
   {
-    id: 4,
+    id: 5,
     title: 'Clima ',
     description: 'Projeto Consumindo API https://api.openweathermap.org',
     demoLink: 'https://github.com/pauloeusantos/Tela-Cadastro-Filmes',
     codeLink: 'https://github.com/pauloeusantos/Tela-Cadastro-Filmes' 
   },
   {
-    id: 5,
+    id: 6,
     title: 'Api Movies',
     description: 'React.js consumindo API',
     demoLink: 'https://api-movies-virid.vercel.app/',
     codeLink: 'https://github.com/pauloeusantos/ApiMovies' 
   },
   {
-    id: 6,
+    id: 7,
     title: 'RoomApp',
     description: 'Utilizando a biblioteca Room para gerenciamento de banco de dados local.',
     demoLink: 'https://github.com/pauloeusantos/RoomApp',
     codeLink: 'https://github.com/pauloeusantos/RoomApp'
   },
   {
-    id: 7,
+    id: 8,
     title: 'RoomApp-Inventory',
     description: 'Aplicativo de inventário para gerenciar estoque e preços.',
     demoLink: 'https://github.com/pauloeusantos/RoomApp-Inventory',
     codeLink: 'https://github.com/pauloeusantos/RoomApp-Inventory'
   },
   {
-    id: 8,
+    id: 9,
     title: 'Movie List',
     description: 'Consumo de API externa para informações de filmes.',
     demoLink: 'https://santfilmes.netlify.app/',
     codeLink: 'https://github.com/pauloeusantos/MovieList' 
   },
   {
-    id: 9,
+    id: 10,
     title: 'Pedra-Papel-Tesoura',
     description: 'Jogo clássico de Pedra, Papel e Tesoura.',
     demoLink: 'https://jokenp-pedra-papel-tesoura.vercel.app/',
