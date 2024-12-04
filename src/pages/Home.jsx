@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import Container from '../components/Container';
 import Footer from '../components/Footer';
@@ -6,85 +6,32 @@ import DragCloseDrawer from '../components/DragCloseDrawer';
 import About from '../components/About';
 import { ExternalLink, Github } from 'lucide-react'; 
 
-
-const projects = [
-  {
-    id: 1,
-    title: 'MyPeace',
-    description: 'Projeto Academico',
-    demoLink: 'https://mypeace.vercel.app/',
-    codeLink: 'https://github.com/pauloeusantos/MyPeace'
-  },
-  {
-    id: 2,
-    title: 'Chat',
-    description: 'Projeto Utilizando SDK-Vercel, HuggingFace e ShadcnUi',
-    demoLink: 'https://chat-paulo.vercel.app/',
-    codeLink: 'https://github.com/pauloeusantos/ChatPaulo'
-  },
-  {
-    id: 3,
-    title: 'Lista De Contato',
-    description: 'Projeto Utilizando Swift',
-    demoLink: 'https://github.com/pauloeusantos/Lista-Contato-',
-    codeLink: 'https://github.com/pauloeusantos/Lista-Contato-' 
-  },
-  {
-    id: 4,
-    title: 'Cadastro De Filmes',
-    description: 'Projeto Utilizando Swift',
-    demoLink: 'https://github.com/pauloeusantos/Tela-Cadastro-Filmes',
-    codeLink: 'https://github.com/pauloeusantos/Tela-Cadastro-Filmes' 
-  },
-  {
-    id: 5,
-    title: 'Clima ',
-    description: 'Projeto Consumindo API https://api.openweathermap.org',
-    demoLink: 'https://github.com/pauloeusantos/Tela-Cadastro-Filmes',
-    codeLink: 'https://github.com/pauloeusantos/Tela-Cadastro-Filmes' 
-  },
-  {
-    id: 6,
-    title: 'Api Movies',
-    description: 'React.js consumindo API',
-    demoLink: 'https://api-movies-virid.vercel.app/',
-    codeLink: 'https://github.com/pauloeusantos/ApiMovies' 
-  },
-  {
-    id: 7,
-    title: 'RoomApp',
-    description: 'Utilizando a biblioteca Room para gerenciamento de banco de dados local.',
-    demoLink: 'https://github.com/pauloeusantos/RoomApp',
-    codeLink: 'https://github.com/pauloeusantos/RoomApp'
-  },
-  {
-    id: 8,
-    title: 'RoomApp-Inventory',
-    description: 'Aplicativo de inventário para gerenciar estoque e preços.',
-    demoLink: 'https://github.com/pauloeusantos/RoomApp-Inventory',
-    codeLink: 'https://github.com/pauloeusantos/RoomApp-Inventory'
-  },
-  {
-    id: 9,
-    title: 'Movie List',
-    description: 'Consumo de API externa para informações de filmes.',
-    demoLink: 'https://santfilmes.netlify.app/',
-    codeLink: 'https://github.com/pauloeusantos/MovieList' 
-  },
-  {
-    id: 10,
-    title: 'Pedra-Papel-Tesoura',
-    description: 'Jogo clássico de Pedra, Papel e Tesoura.',
-    demoLink: 'https://jokenp-pedra-papel-tesoura.vercel.app/',
-    codeLink: 'https://github.com/pauloeusantos/JOKENP---Pedra-Papel-Tesoura' 
-  },
-];
-
 const Home = () => {
   const [open, setOpen] = useState(false);
+  const [repositories, setRepositories] = useState([]);
+
+  useEffect(() => {
+    const fetchRepositories = async () => {
+      try {
+        const response = await fetch('https://api.github.com/users/mairadacosta/repos');
+        const data = await response.json();
+        const formattedData = data.map(repo => ({
+          id: repo.id,
+          title: repo.name,
+          description: repo.description || 'Sem descrição',
+          demoLink: repo.homepage || repo.html_url,
+          codeLink: repo.html_url,
+        }));
+        setRepositories(formattedData);
+      } catch (error) {
+        console.error("Erro ao buscar repositórios:", error);
+      }
+    };
+
+    fetchRepositories();
+  }, []);
 
   const handleOpen = () => setOpen(true);
-  
 
   return (
     <>
@@ -98,9 +45,7 @@ const Home = () => {
         <div className="mx-auto max-w-2xl space-y-4 text-neutral-400">
           <h2 className="text-4xl font-bold text-neutral-200">Meus Projetos</h2>
           <div className="flex flex-col space-y-4">
-         
-            {projects.map((project) => (
-  
+            {repositories.map((project) => (
               <div key={project.id} className="bg-neutral-800 p-4 rounded-lg shadow-lg transition-shadow duration-300 hover:shadow-xl">
                 <h3 className="text-lg font-bold text-white">{project.title}</h3>
                 <p className="text-neutral-300">{project.description}</p>
@@ -125,6 +70,6 @@ const Home = () => {
       </DragCloseDrawer>
     </>
   );
-}
+};
 
 export default Home;
