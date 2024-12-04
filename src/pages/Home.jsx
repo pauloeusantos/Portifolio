@@ -13,7 +13,7 @@ const Home = () => {
   useEffect(() => {
     const fetchRepositories = async () => {
       try {
-        const response = await fetch('https://api.github.com/users/mairadacosta/repos');
+        const response = await fetch('https://api.github.com/users/pauloeusantos/repos');
         const data = await response.json();
         const formattedData = data.map(repo => ({
           id: repo.id,
